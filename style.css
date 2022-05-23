@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f1fff4;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+
+.item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5px;
+    transition: flex 0.7s ease-in;
+    position: relative;
+    flex: 1;
+}
+
+h4 {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    background-color: rgb(255,255,255, 0.7);
+    color: #000;
+    opacity: 0;
+}
+
+.descr {
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    background-color:  	rgb(255,255,255, 0.7);
+    color: #000;
+    font-size: 10px;
+    opacity: 0;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+.price {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    background-color: rgb(255,255,255, 0.7);
+    color: #000;
+    opacity: 0;
+}
+
+.active{
+    flex:5;
+}
+
+.active h4{
+    font-size: 30px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.active .descr{
+    font-size: 15px;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.active .price{
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 1s ease-in;
+    opacity: 1;
+}
+
+.one {
+    background-image: url(https://images.unsplash.com/photo-1517154868524-c6b5fbd62a1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+.two {
+    background-image: url(https://images.unsplash.com/flagged/photo-1574342961277-590aa4596552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+}
+
+.three {
+    background-image: url(https://images.unsplash.com/photo-1616423841125-8307665a0469?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+}
+
+.four {
+    background-image: url(https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+}
+
+.five {
+    background-image: url(https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+}
+
+.six {
+    background-image: url(https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80);
+}
+
+
+/* Counter */
+
+.sale-title {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.counter {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap; 
+    margin-bottom: 50px;
+}
+
+.clock {
+    background-color: rgba(251, 248, 249, 0.5); 
+    width: 200px;
+    height: auto;
+    border: 1px solid #00adb5;
+    border-radius: 30px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.days, .hours, .minutes, .seconds {
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.red {
+    font-size: 60px;
+    border: none;
+    color: red;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+label{
+    font-size: 14px;
+}
+
+.text-input{
+    background-color: #f1fff4;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 12px 20px;
+    margin: 10px;
+}
+
+.btn {
+    background-color: #00adb5;
+    font-size: 20px;
+    flex: 0.2;
+    }
+
+    @media all and (max-width: 1130px){
+
+        h1{
+            font-size: 30px;
+        }
+        
+            h4 {
+                top: 15px;
+                left: 40px;
+            }
+    
+            .descr {
+                top: 80px;
+                left: 40px;
+            }
+    
+            .price {
+                bottom:20px;
+            }
+    
+            .active h4{
+                font-size: 28px;
+            }
+    
+            .active .descr{
+                font-size: 14px;
+            }
+            
+            .active .price{
+                font-size: 24px;
+            }
+    
+            }
+
+            
+    @media all and (max-width: 950px){
+
+        .active h4{
+            font-size: 20px;
+        }
+
+            .price {
+                bottom:15px;
+            }
+    
+            .active .descr{
+                font-size: 12px;
+            }
+
+            .active .price{
+                font-size: 20px;
+            }
+
+            }
+
+    @media all and (max-width: 500px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    .container {
+        flex-direction:column;
+        height: 100vh;
+        }
+
+        h4 {
+            top: 15px;
+            left: 40px;
+        }
+
+        .descr {
+            top: 85px;
+            left: 40px;
+        } 
+
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        .clock {
+            margin: 10px;
+        }
+
+
+        }
+
+        @media all and (max-width: 375px) {
+
+            h1{
+                font-size: 24px;
+            }
+
+            h4 {
+                top: 30px;
+                left: 20px;
+            }
+            
+            .descr {
+                top: 80px;
+                left: 20px;
+            }
+            
+            .price {
+                bottom: 15px;
+                left: 20px;
+            }
+
+
+            .active h4{
+                font-size: 16px;
+            }
+
+            
+            .active .price{
+                font-size: 20px;
+            }
+
+            }
+
+            
+        @media all and (max-width: 320px) {
+
+
+            h4 {
+                top: 20px;
+            }
+            
+            .descr {
+                top: 60px;
+            }
+            
+            .price {
+                bottom: 10px;
+            }
+
+
+            .active h4{
+                font-size: 16px;
+            }
+
+            .active .descr{
+                font-size: 11px;
+            }  
+
+          .active .price{
+                font-size: 16px;
+            }  
+
+            }
+            
+        @media all and (max-width: 280px) {
+
+            .header label{
+                display: flex;
+                justify-content: center;
+            }
+
+            h1{
+                font-size: 20px;
+            }
+
+            .header h3{
+                font-size: 20px;
+            }
+            }
