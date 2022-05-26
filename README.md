@@ -17,8 +17,8 @@ Beautiful one page website with spectacular javascript slides transitions, count
  
 <!-- USAGE EXAMPLES -->
 ## Usage
-<p></p>
-<p></p>
+<p>One page website providing information about various tourist tours.</p>
+<p>Beautiful Vanilla JavaScript slides transition.</p>
 <p>Application is responsive for all mobile devices.</p>
 
 Project Link: https://github.com/kateFrontend/Book-a-tour
