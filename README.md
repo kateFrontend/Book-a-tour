@@ -1,6 +1,6 @@
 <div>
   <h1>Book a tour</h1> 
-  <img src="" alt="" width="auto">
+  <img src="cover.JPG" alt="cover" width="auto">
 </div>
 
 <!-- ABOUT THE PROJECT -->
